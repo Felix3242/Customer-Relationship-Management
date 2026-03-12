@@ -1,14 +1,7 @@
-
 # 🏢 Customer Relationship Management System
-
-A Java Swing desktop application for managing client relationships, assignments, and team coordination with Firebase real-time synchronization. Developed for telMAX Sales Operations to streamline lead management and assignment workflows.
-
-## Overview
-
-Production CRM system built for telMAX Inc. with role-based access control for admins and sales representatives. Enables efficient client management, assignment tracking, and real-time data synchronization across the organization.
+A Java Swing desktop application for managing client relationships, assignments, and team coordination with Firebase real-time synchronization. Built for telMAX Sales Operations with role-based access control for efficient lead management and assignment tracking.
 
 ## Features
-
 - User authentication with secure email/password login
 - Role-based dashboards for admins and sales representatives
 - Client management with search and CSV import functionality
@@ -17,7 +10,6 @@ Production CRM system built for telMAX Inc. with role-based access control for a
 - Custom Java Swing UI with intuitive navigation
 
 ## Tech Stack
-
 - **Language**: Java 8+
 - **GUI**: Java Swing
 - **Database**: Firebase Realtime Database
@@ -26,7 +18,6 @@ Production CRM system built for telMAX Inc. with role-based access control for a
 - **Gradle** (build system)
 
 ## Project Structure
-
 ```
 app/
   src/
@@ -47,7 +38,6 @@ app/
         serviceAccountKey.json # Firebase credentials
   build.gradle.kts
 ```
-
 ## Setup & Running
 
 ### Prerequisites
