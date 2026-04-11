@@ -1,4 +1,4 @@
-# 🏢 Customer Relationship Management System
+# Customer Relationship Management System
 A Java Swing desktop application for managing client relationships, assignments, and team coordination with Firebase real-time synchronization. Built for telMAX Sales Operations with role-based access control for efficient lead management and assignment tracking.
 
 ## Features
