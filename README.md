@@ -1,21 +1,19 @@
 # Customer Relationship Management System
-A Java Swing desktop application for managing client relationships, assignments, and team coordination with Firebase real-time synchronization. Built for telMAX Sales Operations with role-based access control for efficient lead management and assignment tracking.
+A Java Swing desktop CRM for managing client relationships and team assignments with Firebase real-time sync. Built for telMAX Sales Operations with role-based access control.
 
 ## Features
-- User authentication with secure email/password login
-- Role-based dashboards for admins and sales representatives
-- Client management with search and CSV import functionality
+- Role-based dashboards for admins and sales reps
+- Client management with search and CSV bulk import
 - Assignment tracking and completion workflows
-- Real-time data synchronization with Firebase Realtime Database
-- Custom Java Swing UI with intuitive navigation
+- Firebase real-time data synchronization
+- Secure email/password authentication
 
 ## Tech Stack
 - **Language**: Java 8+
 - **GUI**: Java Swing
 - **Database**: Firebase Realtime Database
 - **Build Tool**: Gradle
-- **Dependencies**: Firebase Admin SDK, JDatePicker (`org.jdatepicker:jdatepicker`)
-- **Gradle** (build system)
+- **Dependencies**: Firebase Admin SDK, JDatePicker
 
 ## Project Structure
 ```
@@ -38,60 +36,25 @@ app/
         serviceAccountKey.json # Firebase credentials
   build.gradle.kts
 ```
-## Setup & Running
-
-### Prerequisites
-
-- Java 8 or higher
-- [Gradle](https://gradle.org/) (or use the included Gradle wrapper)
-- A Firebase project with a Realtime Database and a service account key
+## Getting Started
+**Prerequisites**: Java 8+, Gradle, Firebase project with Realtime Database
 
 ### Firebase Setup
-
-1. Go to [Firebase Console](https://console.firebase.google.com/), create a project, and enable Realtime Database.
-2. Download your `serviceAccountKey.json` and place it in:
-   - `app/src/main/resources/serviceAccountKey.json`
+- Create a project in Firebase Console and enable Realtime Database
+- Download serviceAccountKey.json and place it in app/src/main/resources/
 
 ### Build & Run
-
-**From the command line:**
-
 ```sh
 cd app
 ./gradlew build
-```
-
-**To run the app:**
-
-```sh
 ./gradlew run
 ```
 
-**To create an executable JAR:**
-
+To create an executable JAR:
 ```sh
 ./gradlew jar
-```
-
-The JAR will be in `app/build/libs/`. You can double-click it (if Java is installed and associated with `.jar` files) or run:
-
-```sh
 java -jar build/libs/app.jar
 ```
-
-## Usage
-
-- **Login**: Use your email and password to log in.
-- **Admin Dashboard**: Add clients, assign clients, and view all clients.
-- **Rep Dashboard**: View assigned clients and mark assignments as complete.
-- **Import Clients**: Use the "Add Clients By CSV" feature to bulk import clients.
-
-## Code Style & Contribution
-
-- Code is organized by feature/component.
-- Comments and JavaDoc are provided for clarity.
-- Contributions are welcome! Please fork and submit a pull request.
-
 
 ---
 
